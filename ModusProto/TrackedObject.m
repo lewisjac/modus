@@ -10,4 +10,7 @@
 
 @implementation TrackedObject
 
+// insert text here
+/*  more text  */
+
 @end
