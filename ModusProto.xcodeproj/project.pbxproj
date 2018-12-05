@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0667A8DF2C303DF1784C9053 /* libPods-ModusProtoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0502BCE3AB09CF768BC8244 /* libPods-ModusProtoUITests.a */; };
+		759729B60223ABB8A8D570FD /* libPods-ModusProtoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1BE4FB8148845F0D9D88B6A /* libPods-ModusProtoTests.a */; };
+		B191F66921B395B300F5F81E /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B191F66821B395B300F5F81E /* TableViewController.m */; };
 		B1CFF8D821AC4BC20028F88D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CFF8D721AC4BC20028F88D /* AppDelegate.m */; };
 		B1CFF8DB21AC4BC20028F88D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CFF8DA21AC4BC20028F88D /* ViewController.m */; };
 		B1CFF8DE21AC4BC20028F88D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1CFF8DC21AC4BC20028F88D /* Main.storyboard */; };
@@ -15,7 +18,12 @@
 		B1CFF8E621AC4BC30028F88D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CFF8E521AC4BC30028F88D /* main.m */; };
 		B1CFF8F021AC4BC30028F88D /* ModusProtoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CFF8EF21AC4BC30028F88D /* ModusProtoTests.m */; };
 		B1CFF8FB21AC4BC30028F88D /* ModusProtoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CFF8FA21AC4BC30028F88D /* ModusProtoUITests.m */; };
-		B1CFF90A21AC4CCD0028F88D /* TrackedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CFF90921AC4CCD0028F88D /* TrackedObject.m */; };
+		B1CFF90A21AC4CCD0028F88D /* MoodObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CFF90921AC4CCD0028F88D /* MoodObject.m */; };
+		B1D7296C21AC53CE00360D9E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1D7296B21AC53CE00360D9E /* GoogleService-Info.plist */; };
+		B1D7296F21AC5B8F00360D9E /* NewTrackerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D7296E21AC5B8F00360D9E /* NewTrackerVC.m */; };
+		B1D7297221ADA50B00360D9E /* MoodEntryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D7297121ADA50B00360D9E /* MoodEntryVC.m */; };
+		B1D7297521AF543300360D9E /* SettingsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D7297421AF543300360D9E /* SettingsVC.m */; };
+		E7BC1D5D8398679B7ED2C2DE /* libPods-ModusProto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01C0C2A50FE5CEBD8DB8AD03 /* libPods-ModusProto.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +44,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01C0C2A50FE5CEBD8DB8AD03 /* libPods-ModusProto.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ModusProto.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D93B1A334774D0FDAAC2F75 /* Pods-ModusProto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModusProto.release.xcconfig"; path = "Pods/Target Support Files/Pods-ModusProto/Pods-ModusProto.release.xcconfig"; sourceTree = "<group>"; };
+		6CDD97EEE84841C754A0D2B8 /* Pods-ModusProtoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModusProtoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ModusProtoTests/Pods-ModusProtoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9B271947DD8E174383C4780D /* Pods-ModusProtoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModusProtoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ModusProtoUITests/Pods-ModusProtoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B191F66721B395B300F5F81E /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		B191F66821B395B300F5F81E /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		B1CFF8D321AC4BC20028F88D /* ModusProto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModusProto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1CFF8D621AC4BC20028F88D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B1CFF8D721AC4BC20028F88D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -52,8 +66,20 @@
 		B1CFF8F621AC4BC30028F88D /* ModusProtoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModusProtoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1CFF8FA21AC4BC30028F88D /* ModusProtoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModusProtoUITests.m; sourceTree = "<group>"; };
 		B1CFF8FC21AC4BC30028F88D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B1CFF90821AC4CCD0028F88D /* TrackedObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrackedObject.h; sourceTree = "<group>"; };
-		B1CFF90921AC4CCD0028F88D /* TrackedObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrackedObject.m; sourceTree = "<group>"; };
+		B1CFF90821AC4CCD0028F88D /* MoodObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoodObject.h; sourceTree = "<group>"; };
+		B1CFF90921AC4CCD0028F88D /* MoodObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoodObject.m; sourceTree = "<group>"; };
+		B1D7296B21AC53CE00360D9E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		B1D7296D21AC5B8F00360D9E /* NewTrackerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewTrackerVC.h; sourceTree = "<group>"; };
+		B1D7296E21AC5B8F00360D9E /* NewTrackerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewTrackerVC.m; sourceTree = "<group>"; };
+		B1D7297021ADA50B00360D9E /* MoodEntryVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoodEntryVC.h; sourceTree = "<group>"; };
+		B1D7297121ADA50B00360D9E /* MoodEntryVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoodEntryVC.m; sourceTree = "<group>"; };
+		B1D7297321AF543300360D9E /* SettingsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsVC.h; sourceTree = "<group>"; };
+		B1D7297421AF543300360D9E /* SettingsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsVC.m; sourceTree = "<group>"; };
+		C235CD17BB831B336F3E1B37 /* Pods-ModusProtoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModusProtoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ModusProtoTests/Pods-ModusProtoTests.release.xcconfig"; sourceTree = "<group>"; };
+		DBF842655B8C5EB2C2B39B06 /* Pods-ModusProtoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModusProtoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ModusProtoUITests/Pods-ModusProtoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E0502BCE3AB09CF768BC8244 /* libPods-ModusProtoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ModusProtoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1BE4FB8148845F0D9D88B6A /* libPods-ModusProtoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ModusProtoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDF2B31794D790AF339F8641 /* Pods-ModusProto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModusProto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ModusProto/Pods-ModusProto.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7BC1D5D8398679B7ED2C2DE /* libPods-ModusProto.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				759729B60223ABB8A8D570FD /* libPods-ModusProtoTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0667A8DF2C303DF1784C9053 /* libPods-ModusProtoUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +117,8 @@
 				B1CFF8EE21AC4BC30028F88D /* ModusProtoTests */,
 				B1CFF8F921AC4BC30028F88D /* ModusProtoUITests */,
 				B1CFF8D421AC4BC20028F88D /* Products */,
+				B55A6971AC89FFA774DC0656 /* Pods */,
+				F2315C13497C6783D49BCCBF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,15 +137,24 @@
 			children = (
 				B1CFF8D621AC4BC20028F88D /* AppDelegate.h */,
 				B1CFF8D721AC4BC20028F88D /* AppDelegate.m */,
+				B1D7296D21AC5B8F00360D9E /* NewTrackerVC.h */,
+				B1D7296E21AC5B8F00360D9E /* NewTrackerVC.m */,
+				B1CFF90821AC4CCD0028F88D /* MoodObject.h */,
+				B1CFF90921AC4CCD0028F88D /* MoodObject.m */,
+				B1D7297021ADA50B00360D9E /* MoodEntryVC.h */,
+				B1D7297121ADA50B00360D9E /* MoodEntryVC.m */,
 				B1CFF8D921AC4BC20028F88D /* ViewController.h */,
 				B1CFF8DA21AC4BC20028F88D /* ViewController.m */,
-				B1CFF90821AC4CCD0028F88D /* TrackedObject.h */,
-				B1CFF90921AC4CCD0028F88D /* TrackedObject.m */,
+				B1D7297321AF543300360D9E /* SettingsVC.h */,
+				B1D7297421AF543300360D9E /* SettingsVC.m */,
+				B191F66721B395B300F5F81E /* TableViewController.h */,
+				B191F66821B395B300F5F81E /* TableViewController.m */,
 				B1CFF8DC21AC4BC20028F88D /* Main.storyboard */,
 				B1CFF8DF21AC4BC30028F88D /* Assets.xcassets */,
 				B1CFF8E121AC4BC30028F88D /* LaunchScreen.storyboard */,
 				B1CFF8E421AC4BC30028F88D /* Info.plist */,
 				B1CFF8E521AC4BC30028F88D /* main.m */,
+				B1D7296B21AC53CE00360D9E /* GoogleService-Info.plist */,
 			);
 			path = ModusProto;
 			sourceTree = "<group>";
@@ -137,6 +177,29 @@
 			path = ModusProtoUITests;
 			sourceTree = "<group>";
 		};
+		B55A6971AC89FFA774DC0656 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FDF2B31794D790AF339F8641 /* Pods-ModusProto.debug.xcconfig */,
+				2D93B1A334774D0FDAAC2F75 /* Pods-ModusProto.release.xcconfig */,
+				6CDD97EEE84841C754A0D2B8 /* Pods-ModusProtoTests.debug.xcconfig */,
+				C235CD17BB831B336F3E1B37 /* Pods-ModusProtoTests.release.xcconfig */,
+				DBF842655B8C5EB2C2B39B06 /* Pods-ModusProtoUITests.debug.xcconfig */,
+				9B271947DD8E174383C4780D /* Pods-ModusProtoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F2315C13497C6783D49BCCBF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01C0C2A50FE5CEBD8DB8AD03 /* libPods-ModusProto.a */,
+				E1BE4FB8148845F0D9D88B6A /* libPods-ModusProtoTests.a */,
+				E0502BCE3AB09CF768BC8244 /* libPods-ModusProtoUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,6 +207,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B1CFF8FF21AC4BC30028F88D /* Build configuration list for PBXNativeTarget "ModusProto" */;
 			buildPhases = (
+				5BAD63ADEF15126F20F88E80 /* [CP] Check Pods Manifest.lock */,
 				B1CFF8CF21AC4BC20028F88D /* Sources */,
 				B1CFF8D021AC4BC20028F88D /* Frameworks */,
 				B1CFF8D121AC4BC20028F88D /* Resources */,
@@ -161,6 +225,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B1CFF90221AC4BC30028F88D /* Build configuration list for PBXNativeTarget "ModusProtoTests" */;
 			buildPhases = (
+				C4CA5748CF6F32C7C39FE4E4 /* [CP] Check Pods Manifest.lock */,
 				B1CFF8E721AC4BC30028F88D /* Sources */,
 				B1CFF8E821AC4BC30028F88D /* Frameworks */,
 				B1CFF8E921AC4BC30028F88D /* Resources */,
@@ -179,6 +244,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B1CFF90521AC4BC30028F88D /* Build configuration list for PBXNativeTarget "ModusProtoUITests" */;
 			buildPhases = (
+				14CE233B06FD49C2D6616BE9 /* [CP] Check Pods Manifest.lock */,
 				B1CFF8F221AC4BC30028F88D /* Sources */,
 				B1CFF8F321AC4BC30028F88D /* Frameworks */,
 				B1CFF8F421AC4BC30028F88D /* Resources */,
@@ -241,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1CFF8E321AC4BC30028F88D /* LaunchScreen.storyboard in Resources */,
+				B1D7296C21AC53CE00360D9E /* GoogleService-Info.plist in Resources */,
 				B1CFF8E021AC4BC30028F88D /* Assets.xcassets in Resources */,
 				B1CFF8DE21AC4BC20028F88D /* Main.storyboard in Resources */,
 			);
@@ -262,6 +329,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		14CE233B06FD49C2D6616BE9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ModusProtoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BAD63ADEF15126F20F88E80 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ModusProto-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4CA5748CF6F32C7C39FE4E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ModusProtoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B1CFF8CF21AC4BC20028F88D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -269,8 +405,12 @@
 			files = (
 				B1CFF8DB21AC4BC20028F88D /* ViewController.m in Sources */,
 				B1CFF8E621AC4BC30028F88D /* main.m in Sources */,
+				B1D7297221ADA50B00360D9E /* MoodEntryVC.m in Sources */,
+				B1D7297521AF543300360D9E /* SettingsVC.m in Sources */,
 				B1CFF8D821AC4BC20028F88D /* AppDelegate.m in Sources */,
-				B1CFF90A21AC4CCD0028F88D /* TrackedObject.m in Sources */,
+				B1D7296F21AC5B8F00360D9E /* NewTrackerVC.m in Sources */,
+				B1CFF90A21AC4CCD0028F88D /* MoodObject.m in Sources */,
+				B191F66921B395B300F5F81E /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +579,7 @@
 		};
 		B1CFF90021AC4BC30028F88D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDF2B31794D790AF339F8641 /* Pods-ModusProto.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,7 +589,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.training.ModusProto;
+				PRODUCT_BUNDLE_IDENTIFIER = jack.ModusProto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -456,6 +597,7 @@
 		};
 		B1CFF90121AC4BC30028F88D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D93B1A334774D0FDAAC2F75 /* Pods-ModusProto.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -465,7 +607,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.training.ModusProto;
+				PRODUCT_BUNDLE_IDENTIFIER = jack.ModusProto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -473,6 +615,7 @@
 		};
 		B1CFF90321AC4BC30028F88D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CDD97EEE84841C754A0D2B8 /* Pods-ModusProtoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -492,6 +635,7 @@
 		};
 		B1CFF90421AC4BC30028F88D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C235CD17BB831B336F3E1B37 /* Pods-ModusProtoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -511,6 +655,7 @@
 		};
 		B1CFF90621AC4BC30028F88D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBF842655B8C5EB2C2B39B06 /* Pods-ModusProtoUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ACUCL8V58H;
@@ -529,6 +674,7 @@
 		};
 		B1CFF90721AC4BC30028F88D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B271947DD8E174383C4780D /* Pods-ModusProtoUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ACUCL8V58H;

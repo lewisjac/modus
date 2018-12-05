@@ -8,8 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITableViewDelegate, UITableViewDataSource> 
 
+
+
+- (IBAction)newTrackerBtn:(id)sender;
+- (IBAction)newMoodBtn:(id)sender;
+- (IBAction)settingsBtn:(id)sender;
+- (void)startObservingBD;
+    
+    
+    
+    
 
 @end
 
