@@ -11,13 +11,12 @@
 @implementation MoodObject
 
 - (instancetype)initWithKey:(NSString *)key
-                       date:(NSString *)date
                   moodValue:(NSString *)moodValue
                    motValue:(NSString *)motValue
                 addedByUser:(NSString *)user {
     if(self) {
         _key = key;
-        _date = date;
+    //    _date = date;
         _moodValue = moodValue;
         _motValue = motValue;
         _addedByUser = user;
@@ -42,7 +41,7 @@
 // THESE ARE THE ACTUAL VALUES STORED IN THE DATABASE
 - (id)toAnyObject {
     // Create a dictionary for Firebase
-    NSDictionary *dict = @{@"moodValue":_moodValue, @"motValue":_motValue, @"user":_addedByUser};
+    NSDictionary *dict = @{@"moodValue":_moodValue, @"motValue":_motValue};
     return dict;
 }
 

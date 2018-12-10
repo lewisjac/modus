@@ -91,7 +91,6 @@
         self.dbRef = [[FIRDatabase database] reference];
 //        MoodObject *newMoodEntry = [MoodObject alloc] initWithKey: date:dateString moodValue:moodValue addedByUser:@"Nil";
         MoodObject *newMoodEntry = [[MoodObject alloc] init];
-        [newMoodEntry setDate:dateString];
         [newMoodEntry setMotValue:motValue];
         [newMoodEntry setMoodValue:moodValue];
         [newMoodEntry setAddedByUser:@"nil"];
@@ -101,15 +100,4 @@
         [self dismissViewControllerAnimated:YES completion:nil];
     }
     
-    
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 @end

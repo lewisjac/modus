@@ -1,18 +1,18 @@
 //
-//  TableViewController.m
+//  TableViewControllerTEST.m
 //  ModusProto
 //
-//  Created by Jack Simmons on 12/1/18.
+//  Created by Jack Simmons on 12/10/18.
 //  Copyright © 2018 Jack Simmons. All rights reserved.
 //
 
-#import "TableViewController.h"
+#import "TableViewControllerTEST.h"
 
-@interface TableViewController ()
+@interface TableViewControllerTEST ()
 
 @end
 
-@implementation TableViewController
+@implementation TableViewControllerTEST
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -25,11 +25,6 @@
 }
 
 #pragma mark - Table view data source
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return 100;
-}
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 #warning Incomplete implementation, return the number of sections

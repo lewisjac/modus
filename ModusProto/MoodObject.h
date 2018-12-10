@@ -16,7 +16,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 @property (copy, nonatomic) NSString *key;
-@property (copy, nonatomic) NSString *date;
 @property (copy, nonatomic) NSString *moodValue;
 @property (copy, nonatomic) NSString *motValue; 
 @property (copy, nonatomic) NSString *addedByUser;
@@ -24,7 +23,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 // designated initializer
 - (instancetype)initWithKey:(NSString *)key
-                       date:(NSString *)date
                    moodValue:(NSString *)moodValue
                    motValue:(NSString *)motValue
                addedByUser:(NSString *)user;
