@@ -104,7 +104,7 @@
                                                         <constraint firstItem="1ik-Mu-jGG" firstAttribute="centerY" secondItem="fgZ-9k-pBx" secondAttribute="centerY" id="ybW-dX-t9p"/>
                                                     </constraints>
                                                 </view>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image-1" translatesAutoresizingMaskIntoConstraints="NO" id="tkt-u5-NI0">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5_robot_face" translatesAutoresizingMaskIntoConstraints="NO" id="tkt-u5-NI0">
                                                     <rect key="frame" x="122" y="-4" width="90" height="99.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="99" id="KdP-bL-Tff"/>
@@ -127,6 +127,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="dateLabel" destination="MWz-Yl-pd8" id="wPH-tt-XAT"/>
+                                            <outlet property="moodImage" destination="tkt-u5-NI0" id="gEX-Tt-cOD"/>
                                             <outlet property="motLevel" destination="Zz3-Tc-hY0" id="2kf-bU-KrH"/>
                                         </connections>
                                     </tableViewCell>
@@ -507,8 +508,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="5_robot_face" width="360" height="360"/>
         <image name="Image" width="375.3599853515625" height="189.36000061035156"/>
-        <image name="Image-1" width="291.60000610351562" height="291.60000610351562"/>
         <image name="addImg" width="120" height="120"/>
         <image name="buttons " width="120" height="120"/>
     </resources>

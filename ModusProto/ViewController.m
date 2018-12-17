@@ -129,9 +129,32 @@
     NSDate *dateAsDate = [formatterCurrent dateFromString:moodObj.key];
     NSString *formattedDateString = [formatterUpdated stringFromDate:dateAsDate];
     
+    // convert moodValue to int
+    NSInteger val = [moodObj.moodValue integerValue];
+    
+    switch (val) {
+        case 1:
+            eCell.moodImage.image = [UIImage imageNamed:@"1_robot_face.png"];
+            break;
+        case 2:
+            eCell.moodImage.image = [UIImage imageNamed:@"2_robot_face.png"];
+            break;
+        case 3:
+            eCell.moodImage.image = [UIImage imageNamed:@"3_robot_face.png"];
+            break;
+        case 4:
+            eCell.moodImage.image = [UIImage imageNamed:@"4_robot_face.png"];
+            break;
+        case 5:
+            eCell.moodImage.image = [UIImage imageNamed:@"5_robot_face.png"];
+            break;
+            
+        default:
+            break;
+    }
     
     eCell.dateLabel.text =  formattedDateString;
-    eCell.motLevel.text = moodObj.moodValue;
+    eCell.motLevel.text = moodObj.motValue;
     
     return eCell;
 }

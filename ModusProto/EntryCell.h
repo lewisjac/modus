@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (strong, nonatomic) IBOutlet UILabel *dateLabel;
 @property (strong, nonatomic) IBOutlet UILabel *motLevel; 
+@property (strong, nonatomic) IBOutlet UIImageView *moodImage;
 
 @end
 

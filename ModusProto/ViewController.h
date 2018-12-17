@@ -12,7 +12,7 @@
 
 
     @property (strong, nonatomic) IBOutlet UITableView *tableView;
-    
+
 
 - (IBAction)newTrackerBtn:(id)sender;
 - (IBAction)newMoodBtn:(id)sender;
