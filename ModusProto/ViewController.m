@@ -17,91 +17,69 @@
 
 @interface ViewController () {
     NSString *storyboardName;
-    FIRDatabaseReference *posts;
     FIRDatabaseReference *postsSub;
     
 }
     
 @property (strong, nonatomic) FIRDatabaseReference *dbRef;
-@property (strong, nonatomic) NSMutableArray *allSnapshots;
 @property (strong, nonatomic) NSMutableArray *snapshotsArray;
-@property (strong, nonatomic) NSMutableArray *dateKeys;
 
 @end
 
 @implementation ViewController 
 
 
-
-
 - (void)viewDidLoad {
     
     [super viewDidLoad];
     
-    UIViewController *vc = [[UIViewController alloc] init];
-    [self presentViewController:vc
-                       animated:YES
-                     completion:nil];
+//    UIViewController *vc = [[UIViewController alloc] init];
+//    [self presentViewController:vc
+//                       animated:YES
+//                     completion:nil];
     
     self.dbRef = [[FIRDatabase database] reference];
     storyboardName = @"Main";
     _dbRef = [[[FIRDatabase database] reference] child:@"sweet-items"];
-    
-    
+    [self.tableView setDataSource: self];
+    [self.tableView setDelegate: self];
+
     [self startDatabaseObservation];
-    [self runArray];
+    
 }
 
+    
+
+    
 - (void)startDatabaseObservation {
-   self.dbRef = [[FIRDatabase database] reference];
+    self.dbRef = [[FIRDatabase database] reference];
     postsSub = [[_dbRef child:@"jasi2018"] child:@"MoodEntries"];
     
     [postsSub observeEventType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
+
         self.snapshotsArray = [NSMutableArray array];
         
         for (snapshot in snapshot.children) {
             MoodObject *newMoodEntry = [[MoodObject alloc] init:snapshot];
             [self.snapshotsArray addObject:newMoodEntry];
-            NSLog(@"%@", newMoodEntry); 
+            [self.tableView reloadData];
+           
+            NSString *theDate = newMoodEntry.key;
+            NSLog(@"\n\n\n The Date:%@ \n\n\n", theDate);
         }
-    }];
-}
-    
-- (void)startObservingBD {
-    
-    // DATES ARE KEYS: Pull keys and use those to reference values.
-    // Pull mood and motivation values out and put them in their own array.
-    
-    posts = [[_dbRef child:@"jasi2018"] child:@"MoodEntries"];
-   
-    [posts observeEventType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
-        self.allSnapshots = [NSMutableArray array];
-        self.dateKeys = [NSMutableArray array];
-        
-        for (snapshot in snapshot.children) {
-            MoodObject *newMoodEntry = [[MoodObject alloc] init:snapshot];
-            
-            NSString *date = snapshot.key;
-            NSLog(@"%@", date);
-            
-            if (date != nil) {
-                [self.dateKeys addObject:date];
-            }
-          
-            [self.allSnapshots addObject:newMoodEntry];
-            NSLog(@"\n\n\n\n HERE: %@ \n\n\n\n", newMoodEntry);
-            NSLog(@"\n\n\n\n HERE: %@ \n\n\n\n", _allSnapshots);
-        }
-    } withCancelBlock:^(NSError * _Nonnull error) {
+    }withCancelBlock:^(NSError * _Nonnull error) {
         NSLog(@"%@", error.localizedDescription);
     }];
-
+}
+    
+- (void) tocLoad {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.tableView reloadData];
+    });
 }
 
-- (void)runArray {
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSMutableArray *dates = [defaults objectForKey:@"dateKeys"];
-}
+
+
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -113,27 +91,48 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 2;
+    return _snapshotsArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell =[tableView dequeueReusableCellWithIdentifier:@"Cell"];
-    EntryCell *eCell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
-    FIRDataSnapshot *snapshot = [self.allSnapshots objectAtIndex:indexPath.row];
+    
+    // DATE CONVERSION CODE
+    
+    //    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    //    NSMutableArray *dates = [defaults objectForKey:@"dateKeys"];
+    //    NSMutableArray *datesFormatted = [NSMutableArray array];
+    //
+    //    NSString *dateStr = [[NSString alloc] init];
+    //    // convert dates to this format: DEC 12 08:01 AM
+    //
+    //    for (dateStr in dates) {
 
-    MoodObject *moodObj = _allSnapshots[indexPath.row];
+    //    }
+    //         NSString *date = datesFormatted[indexPath.row];
     
-    /* from swift:
-     let entry = userEntries[indexPath.row]
-     cell.calories?.text = entry.calories
-     */
     
-    eCell.dateLabel.text = moodObj.key;
-    eCell.motLevel.text = moodObj.motValue;
+    NSLog(@"\n\n Array: %@ \n\n", _snapshotsArray);
+    EntryCell *eCell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+    MoodObject *moodObj = _snapshotsArray[indexPath.row];
     
-    NSLog(@"\n\n\n\nHERE: ------> %@\n\n\n\n\n", moodObj.key);
-   // eCell.motLevel.text = motiLevel;
+    
+    
+    NSLog(@"\n\n\n READ THIS %@ %@ \n\n\n", moodObj.motValue, moodObj.moodValue);
+
+    NSString *inputDateFormat = @"2018-12-04 07:47:05";
+    NSDate *dateVar = [NSDate date];
+    NSDateFormatter *formatterCurrent = [[NSDateFormatter alloc] init];
+    NSDateFormatter *formatterUpdated = [[NSDateFormatter alloc] init];
+    [formatterCurrent setDateFormat: @"yyyy-MM-dd HH:mm:ss"];
+    [formatterUpdated setDateFormat:@"MMM d, h:mm a"];
+    NSDate *dateAsDate = [formatterCurrent dateFromString:moodObj.key];
+    NSString *formattedDateString = [formatterUpdated stringFromDate:dateAsDate];
+    
+    
+    eCell.dateLabel.text =  formattedDateString;
+    eCell.motLevel.text = moodObj.moodValue;
+    
     return eCell;
 }
 
@@ -156,7 +155,7 @@
     
     - (void)settingsBtn:(id)sender {
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle:nil];
-        UIViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"SettingsVC"];
+        UIViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"MoodTableVC"];
         [self presentViewController:vc animated:YES completion:nil];
     }
 

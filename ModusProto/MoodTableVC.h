@@ -10,7 +10,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TableViewControllerTEST : UITableViewController
+@interface MoodTableVC : UIViewController <UITableViewDelegate, UITableViewDataSource>
+    
+    @property (strong, nonatomic) IBOutlet UITableView *tableView;
+    
 
 @end
 

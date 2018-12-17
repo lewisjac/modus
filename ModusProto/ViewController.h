@@ -11,11 +11,14 @@
 @interface ViewController : UIViewController<UITableViewDelegate, UITableViewDataSource> 
 
 
+    @property (strong, nonatomic) IBOutlet UITableView *tableView;
+    
 
 - (IBAction)newTrackerBtn:(id)sender;
 - (IBAction)newMoodBtn:(id)sender;
 - (IBAction)settingsBtn:(id)sender;
-- (void)startObservingBD;
+- (void)startDatabaseObservation;
+- (void)tocLoad; 
     
     
     
