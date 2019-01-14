@@ -11,6 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NewTrackerVC : UIViewController
+@property (strong, nonatomic) IBOutlet UIPickerView *dataTypePicker;
+@property (strong, nonatomic) IBOutlet UITextField *trackerName; 
 
 @end
 

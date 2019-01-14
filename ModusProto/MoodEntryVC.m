@@ -8,11 +8,13 @@
 
 #import "MoodEntryVC.h"
 #import "MoodObject.h"
+#import "AddDetailVC.h"
 
 
 @interface MoodEntryVC () {
     NSString *moodValue;
     NSString *motValue;
+    NSString *storyboardName;
 }
 
 @end
@@ -22,6 +24,8 @@
 - (void)viewDidLoad {
         [super viewDidLoad];
         self.dbRef = [[[FIRDatabase database] reference] child:@"jasi2018"];
+    
+        storyboardName = @"Main";
     }
 
 
@@ -99,5 +103,24 @@
         
         [self dismissViewControllerAnimated:YES completion:nil];
     }
+
+- (void)addDetail:(id)sender {
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle:nil];
+    UIViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"AddDetailTVC"];
+    [self presentViewController:vc animated:YES completion:nil];
+//    AddDetailVC *detailVC = [AddDetailVC new];
+//    [self presentViewController:detailVC animated:YES completion:nil];
+    
+    
+    
+}
+
+- (IBAction)onTapCancel:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:^{
+        //nah
+    }];
+    [self.navigationController popViewControllerAnimated:YES];
+    NSLog(@"pressed the canx button");
+}
     
 @end

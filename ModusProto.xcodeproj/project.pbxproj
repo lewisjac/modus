@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		0667A8DF2C303DF1784C9053 /* libPods-ModusProtoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0502BCE3AB09CF768BC8244 /* libPods-ModusProtoUITests.a */; };
 		759729B60223ABB8A8D570FD /* libPods-ModusProtoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1BE4FB8148845F0D9D88B6A /* libPods-ModusProtoTests.a */; };
-		B191F66921B395B300F5F81E /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B191F66821B395B300F5F81E /* TableViewController.m */; };
+		B185D2CD21E4FFBA00C1AEA8 /* AddDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B185D2CC21E4FFBA00C1AEA8 /* AddDetailVC.m */; };
+		B196D2C821CD3BB400F7FEF4 /* Weather.m in Sources */ = {isa = PBXBuildFile; fileRef = B196D2C721CD3BB400F7FEF4 /* Weather.m */; };
 		B1CFF8D821AC4BC20028F88D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CFF8D721AC4BC20028F88D /* AppDelegate.m */; };
 		B1CFF8DB21AC4BC20028F88D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CFF8DA21AC4BC20028F88D /* ViewController.m */; };
 		B1CFF8DE21AC4BC20028F88D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1CFF8DC21AC4BC20028F88D /* Main.storyboard */; };
@@ -25,8 +26,7 @@
 		B1D7297521AF543300360D9E /* SettingsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D7297421AF543300360D9E /* SettingsVC.m */; };
 		B1EF7D1321B9863200CD141F /* EntryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B1EF7D1221B9863200CD141F /* EntryCell.m */; };
 		B1EF7D1521B9E05100CD141F /* lgihteningSymbol.png in Resources */ = {isa = PBXBuildFile; fileRef = B1EF7D1421B9E05100CD141F /* lgihteningSymbol.png */; };
-		B1EF7D1821BEBF3D00CD141F /* MoodTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B1EF7D1721BEBF3D00CD141F /* MoodTableVC.m */; };
-		B1F6482721BF1F6800054B77 /* EntryCellTEST.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F6482621BF1F6800054B77 /* EntryCellTEST.m */; };
+		B1F0039121E0153A006F4162 /* MenuTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F0039021E0153A006F4162 /* MenuTVC.m */; };
 		E7BC1D5D8398679B7ED2C2DE /* libPods-ModusProto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01C0C2A50FE5CEBD8DB8AD03 /* libPods-ModusProto.a */; };
 /* End PBXBuildFile section */
 
@@ -52,8 +52,10 @@
 		2D93B1A334774D0FDAAC2F75 /* Pods-ModusProto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModusProto.release.xcconfig"; path = "Pods/Target Support Files/Pods-ModusProto/Pods-ModusProto.release.xcconfig"; sourceTree = "<group>"; };
 		6CDD97EEE84841C754A0D2B8 /* Pods-ModusProtoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModusProtoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ModusProtoTests/Pods-ModusProtoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9B271947DD8E174383C4780D /* Pods-ModusProtoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModusProtoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ModusProtoUITests/Pods-ModusProtoUITests.release.xcconfig"; sourceTree = "<group>"; };
-		B191F66721B395B300F5F81E /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
-		B191F66821B395B300F5F81E /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		B185D2CB21E4FFBA00C1AEA8 /* AddDetailVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddDetailVC.h; sourceTree = "<group>"; };
+		B185D2CC21E4FFBA00C1AEA8 /* AddDetailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddDetailVC.m; sourceTree = "<group>"; };
+		B196D2C621CD3BB400F7FEF4 /* Weather.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Weather.h; sourceTree = "<group>"; };
+		B196D2C721CD3BB400F7FEF4 /* Weather.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Weather.m; sourceTree = "<group>"; };
 		B1CFF8D321AC4BC20028F88D /* ModusProto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModusProto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1CFF8D621AC4BC20028F88D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B1CFF8D721AC4BC20028F88D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -82,10 +84,8 @@
 		B1EF7D1121B9863200CD141F /* EntryCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EntryCell.h; sourceTree = "<group>"; };
 		B1EF7D1221B9863200CD141F /* EntryCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EntryCell.m; sourceTree = "<group>"; };
 		B1EF7D1421B9E05100CD141F /* lgihteningSymbol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lgihteningSymbol.png; sourceTree = SOURCE_ROOT; };
-		B1EF7D1621BEBF3D00CD141F /* MoodTableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoodTableVC.h; sourceTree = "<group>"; };
-		B1EF7D1721BEBF3D00CD141F /* MoodTableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoodTableVC.m; sourceTree = "<group>"; };
-		B1F6482521BF1F6800054B77 /* EntryCellTEST.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EntryCellTEST.h; sourceTree = "<group>"; };
-		B1F6482621BF1F6800054B77 /* EntryCellTEST.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EntryCellTEST.m; sourceTree = "<group>"; };
+		B1F0038F21E0153A006F4162 /* MenuTVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuTVC.h; sourceTree = "<group>"; };
+		B1F0039021E0153A006F4162 /* MenuTVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuTVC.m; sourceTree = "<group>"; };
 		C235CD17BB831B336F3E1B37 /* Pods-ModusProtoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModusProtoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ModusProtoTests/Pods-ModusProtoTests.release.xcconfig"; sourceTree = "<group>"; };
 		DBF842655B8C5EB2C2B39B06 /* Pods-ModusProtoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModusProtoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ModusProtoUITests/Pods-ModusProtoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E0502BCE3AB09CF768BC8244 /* libPods-ModusProtoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ModusProtoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,6 +148,10 @@
 			children = (
 				B1CFF8D621AC4BC20028F88D /* AppDelegate.h */,
 				B1CFF8D721AC4BC20028F88D /* AppDelegate.m */,
+				B196D2C621CD3BB400F7FEF4 /* Weather.h */,
+				B196D2C721CD3BB400F7FEF4 /* Weather.m */,
+				B185D2CB21E4FFBA00C1AEA8 /* AddDetailVC.h */,
+				B185D2CC21E4FFBA00C1AEA8 /* AddDetailVC.m */,
 				B1D7296D21AC5B8F00360D9E /* NewTrackerVC.h */,
 				B1D7296E21AC5B8F00360D9E /* NewTrackerVC.m */,
 				B1CFF90821AC4CCD0028F88D /* MoodObject.h */,
@@ -156,14 +160,10 @@
 				B1D7297121ADA50B00360D9E /* MoodEntryVC.m */,
 				B1EF7D1121B9863200CD141F /* EntryCell.h */,
 				B1EF7D1221B9863200CD141F /* EntryCell.m */,
-				B1F6482521BF1F6800054B77 /* EntryCellTEST.h */,
-				B1F6482621BF1F6800054B77 /* EntryCellTEST.m */,
-				B1EF7D1621BEBF3D00CD141F /* MoodTableVC.h */,
-				B1EF7D1721BEBF3D00CD141F /* MoodTableVC.m */,
 				B1D7297321AF543300360D9E /* SettingsVC.h */,
 				B1D7297421AF543300360D9E /* SettingsVC.m */,
-				B191F66721B395B300F5F81E /* TableViewController.h */,
-				B191F66821B395B300F5F81E /* TableViewController.m */,
+				B1F0038F21E0153A006F4162 /* MenuTVC.h */,
+				B1F0039021E0153A006F4162 /* MenuTVC.m */,
 				B1CFF8D921AC4BC20028F88D /* ViewController.h */,
 				B1CFF8DA21AC4BC20028F88D /* ViewController.m */,
 				B1CFF8DC21AC4BC20028F88D /* Main.storyboard */,
@@ -422,17 +422,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B196D2C821CD3BB400F7FEF4 /* Weather.m in Sources */,
 				B1CFF8DB21AC4BC20028F88D /* ViewController.m in Sources */,
-				B1EF7D1821BEBF3D00CD141F /* MoodTableVC.m in Sources */,
+				B185D2CD21E4FFBA00C1AEA8 /* AddDetailVC.m in Sources */,
+				B1F0039121E0153A006F4162 /* MenuTVC.m in Sources */,
 				B1CFF8E621AC4BC30028F88D /* main.m in Sources */,
 				B1D7297221ADA50B00360D9E /* MoodEntryVC.m in Sources */,
 				B1EF7D1321B9863200CD141F /* EntryCell.m in Sources */,
 				B1D7297521AF543300360D9E /* SettingsVC.m in Sources */,
 				B1CFF8D821AC4BC20028F88D /* AppDelegate.m in Sources */,
 				B1D7296F21AC5B8F00360D9E /* NewTrackerVC.m in Sources */,
-				B1F6482721BF1F6800054B77 /* EntryCellTEST.m in Sources */,
 				B1CFF90A21AC4CCD0028F88D /* MoodObject.m in Sources */,
-				B191F66921B395B300F5F81E /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

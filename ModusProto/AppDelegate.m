@@ -27,6 +27,25 @@
                              NSLog(@"USER SIGNED IN");
                          }];
     
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    UIViewController *leftView = [mainStoryboard instantiateViewControllerWithIdentifier:@"LeftViewController"];
+    UIViewController *centerView = [mainStoryboard instantiateViewControllerWithIdentifier:@"ViewController"];
+    
+    UINavigationController *leftNav = [[UINavigationController alloc] initWithRootViewController:leftView];
+//    [leftNav setNavigationBarHidden:YES animated:YES];
+    
+    UINavigationController *centerNav = [[UINavigationController alloc] initWithRootViewController:centerView];
+//    [centerNav setNavigationBarHidden:YES animated:YES];
+    
+    self.drawerController = [[MMDrawerController alloc] initWithCenterViewController:centerNav leftDrawerViewController:leftNav];
+//    self.drawerController.openDrawerGestureModeMask = MMOpenDrawerGestureModePanningCenterView;
+//    self.drawerController.closeDrawerGestureModeMask = MMCloseDrawerGestureModePanningCenterView;
+    
+    _window.rootViewController = self.drawerController;
+    [_window makeKeyAndVisible];
+    _drawerController.maximumLeftDrawerWidth = 160;
+    
 
 
     return YES;

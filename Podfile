@@ -9,6 +9,7 @@ target 'ModusProto' do
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
+  pod 'MMDrawerController', '~> 0.5.7'
 
   target 'ModusProtoTests' do
     inherit! :search_paths

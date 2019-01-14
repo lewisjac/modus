@@ -32,6 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 - (IBAction)quickEntry:(id)sender;
+- (IBAction)addDetail:(id)sender;
     
 @end
 
