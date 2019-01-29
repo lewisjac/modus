@@ -46,36 +46,4 @@
 }
 
 
-
-
-
-/*
- 
- 
- let pulledCalorieLimit = UserDefaults.standard.string(forKey: userDefaultsCalorieLimitKey) ?? "0"
- let sweet = UserEntry(calories: userEntry, description: food, dateTime: calEntryDate, calorieLimit: pulledCalorieLimit, newDay: "") // this creates a sweet object we can pass along to firebase
- let sweetRef = self.dbRef.child(calEntryDate) // creates a reference for the sweet
- sweetRef.setValue(sweet.toAnyObject())
- 
- 
- */
-
-
-
-
-
-
-
-
-
-
-//- (instancetype)initWithSnapshot:(FIRDataSnapshot *)snap {
-//    _key = snap.key;
-//    _itemReference = snap.ref;
-//    
-//    FIRDataSnapshot *sweetCont = [[FIRDataSnapshot alloc] init];
-//  
-//    
-//}
-
 @end

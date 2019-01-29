@@ -1,16 +1,16 @@
 //
-//  AddDetail.h
+//  rangeCell.h
 //  ModusProto
 //
-//  Created by Jack Simmons on 1/8/19.
+//  Created by Jack Simmons on 1/19/19.
 //  Copyright © 2019 Jack Simmons. All rights reserved.
 //
 
-#import "ViewController.h"
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AddDetailVC : ViewController
+@interface rangeCell : UITableViewCell
 
 @end
 

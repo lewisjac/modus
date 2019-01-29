@@ -7,6 +7,7 @@
 //
 
 #import "MenuTVC.h"
+#import "AppDelegate.h" // this is here so that we can close the drawer
 
 @interface MenuTVC () {
     NSMutableArray *menuButtons;
@@ -64,6 +65,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 
     if (indexPath.row == 0) {
+        AppDelegate *app = [[UIApplication sharedApplication] delegate];
+        [app.drawerController toggleDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
     NSString * storyboardIdentifier = @"Main";// for example "Main.storyboard" then you have to take only "Main"
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardIdentifier bundle: [NSBundle mainBundle]];
     UIViewController * UIVC = [storyboard instantiateViewControllerWithIdentifier:@"NewTrackerVC"];

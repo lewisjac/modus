@@ -8,7 +8,7 @@
 
 #import "MoodEntryVC.h"
 #import "MoodObject.h"
-#import "AddDetailVC.h"
+#import "AddDetailTVC.h"
 
 
 @interface MoodEntryVC () {

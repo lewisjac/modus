@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0667A8DF2C303DF1784C9053 /* libPods-ModusProtoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0502BCE3AB09CF768BC8244 /* libPods-ModusProtoUITests.a */; };
 		759729B60223ABB8A8D570FD /* libPods-ModusProtoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1BE4FB8148845F0D9D88B6A /* libPods-ModusProtoTests.a */; };
-		B185D2CD21E4FFBA00C1AEA8 /* AddDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B185D2CC21E4FFBA00C1AEA8 /* AddDetailVC.m */; };
 		B196D2C821CD3BB400F7FEF4 /* Weather.m in Sources */ = {isa = PBXBuildFile; fileRef = B196D2C721CD3BB400F7FEF4 /* Weather.m */; };
 		B1CFF8D821AC4BC20028F88D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CFF8D721AC4BC20028F88D /* AppDelegate.m */; };
 		B1CFF8DB21AC4BC20028F88D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CFF8DA21AC4BC20028F88D /* ViewController.m */; };
@@ -24,6 +23,12 @@
 		B1D7296F21AC5B8F00360D9E /* NewTrackerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D7296E21AC5B8F00360D9E /* NewTrackerVC.m */; };
 		B1D7297221ADA50B00360D9E /* MoodEntryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D7297121ADA50B00360D9E /* MoodEntryVC.m */; };
 		B1D7297521AF543300360D9E /* SettingsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D7297421AF543300360D9E /* SettingsVC.m */; };
+		B1E9ADA021F4250B00ADBCE9 /* binaryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E9AD9F21F4250B00ADBCE9 /* binaryCell.m */; };
+		B1E9ADA321F4259500ADBCE9 /* rangeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E9ADA221F4259500ADBCE9 /* rangeCell.m */; };
+		B1E9ADA621F425BE00ADBCE9 /* numberCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E9ADA521F425BE00ADBCE9 /* numberCell.m */; };
+		B1E9ADA921F4263A00ADBCE9 /* VariableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E9ADA821F4263A00ADBCE9 /* VariableCell.m */; };
+		B1E9ADAC21F42A6200ADBCE9 /* AddDetailTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E9ADAB21F42A6200ADBCE9 /* AddDetailTVC.m */; };
+		B1E9ADB121F42EED00ADBCE9 /* VariableObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E9ADB021F42EED00ADBCE9 /* VariableObject.m */; };
 		B1EF7D1321B9863200CD141F /* EntryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B1EF7D1221B9863200CD141F /* EntryCell.m */; };
 		B1EF7D1521B9E05100CD141F /* lgihteningSymbol.png in Resources */ = {isa = PBXBuildFile; fileRef = B1EF7D1421B9E05100CD141F /* lgihteningSymbol.png */; };
 		B1F0039121E0153A006F4162 /* MenuTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F0039021E0153A006F4162 /* MenuTVC.m */; };
@@ -52,8 +57,6 @@
 		2D93B1A334774D0FDAAC2F75 /* Pods-ModusProto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModusProto.release.xcconfig"; path = "Pods/Target Support Files/Pods-ModusProto/Pods-ModusProto.release.xcconfig"; sourceTree = "<group>"; };
 		6CDD97EEE84841C754A0D2B8 /* Pods-ModusProtoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModusProtoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ModusProtoTests/Pods-ModusProtoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9B271947DD8E174383C4780D /* Pods-ModusProtoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModusProtoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ModusProtoUITests/Pods-ModusProtoUITests.release.xcconfig"; sourceTree = "<group>"; };
-		B185D2CB21E4FFBA00C1AEA8 /* AddDetailVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddDetailVC.h; sourceTree = "<group>"; };
-		B185D2CC21E4FFBA00C1AEA8 /* AddDetailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddDetailVC.m; sourceTree = "<group>"; };
 		B196D2C621CD3BB400F7FEF4 /* Weather.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Weather.h; sourceTree = "<group>"; };
 		B196D2C721CD3BB400F7FEF4 /* Weather.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Weather.m; sourceTree = "<group>"; };
 		B1CFF8D321AC4BC20028F88D /* ModusProto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModusProto.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +84,18 @@
 		B1D7297121ADA50B00360D9E /* MoodEntryVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoodEntryVC.m; sourceTree = "<group>"; };
 		B1D7297321AF543300360D9E /* SettingsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsVC.h; sourceTree = "<group>"; };
 		B1D7297421AF543300360D9E /* SettingsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsVC.m; sourceTree = "<group>"; };
+		B1E9AD9E21F4250B00ADBCE9 /* binaryCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = binaryCell.h; sourceTree = "<group>"; };
+		B1E9AD9F21F4250B00ADBCE9 /* binaryCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = binaryCell.m; sourceTree = "<group>"; };
+		B1E9ADA121F4259500ADBCE9 /* rangeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rangeCell.h; sourceTree = "<group>"; };
+		B1E9ADA221F4259500ADBCE9 /* rangeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = rangeCell.m; sourceTree = "<group>"; };
+		B1E9ADA421F425BE00ADBCE9 /* numberCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = numberCell.h; sourceTree = "<group>"; };
+		B1E9ADA521F425BE00ADBCE9 /* numberCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = numberCell.m; sourceTree = "<group>"; };
+		B1E9ADA721F4263A00ADBCE9 /* VariableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VariableCell.h; sourceTree = "<group>"; };
+		B1E9ADA821F4263A00ADBCE9 /* VariableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VariableCell.m; sourceTree = "<group>"; };
+		B1E9ADAA21F42A6200ADBCE9 /* AddDetailTVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddDetailTVC.h; sourceTree = "<group>"; };
+		B1E9ADAB21F42A6200ADBCE9 /* AddDetailTVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddDetailTVC.m; sourceTree = "<group>"; };
+		B1E9ADAF21F42EED00ADBCE9 /* VariableObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VariableObject.h; sourceTree = "<group>"; };
+		B1E9ADB021F42EED00ADBCE9 /* VariableObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VariableObject.m; sourceTree = "<group>"; };
 		B1EF7D1121B9863200CD141F /* EntryCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EntryCell.h; sourceTree = "<group>"; };
 		B1EF7D1221B9863200CD141F /* EntryCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EntryCell.m; sourceTree = "<group>"; };
 		B1EF7D1421B9E05100CD141F /* lgihteningSymbol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lgihteningSymbol.png; sourceTree = SOURCE_ROOT; };
@@ -150,12 +165,12 @@
 				B1CFF8D721AC4BC20028F88D /* AppDelegate.m */,
 				B196D2C621CD3BB400F7FEF4 /* Weather.h */,
 				B196D2C721CD3BB400F7FEF4 /* Weather.m */,
-				B185D2CB21E4FFBA00C1AEA8 /* AddDetailVC.h */,
-				B185D2CC21E4FFBA00C1AEA8 /* AddDetailVC.m */,
+				B1E9AD9D21F420BB00ADBCE9 /* variableCells */,
+				B1E9ADAA21F42A6200ADBCE9 /* AddDetailTVC.h */,
+				B1E9ADAB21F42A6200ADBCE9 /* AddDetailTVC.m */,
 				B1D7296D21AC5B8F00360D9E /* NewTrackerVC.h */,
 				B1D7296E21AC5B8F00360D9E /* NewTrackerVC.m */,
-				B1CFF90821AC4CCD0028F88D /* MoodObject.h */,
-				B1CFF90921AC4CCD0028F88D /* MoodObject.m */,
+				B1E9ADAE21F42ECF00ADBCE9 /* FirebaseObjects */,
 				B1D7297021ADA50B00360D9E /* MoodEntryVC.h */,
 				B1D7297121ADA50B00360D9E /* MoodEntryVC.m */,
 				B1EF7D1121B9863200CD141F /* EntryCell.h */,
@@ -193,6 +208,32 @@
 				B1CFF8FC21AC4BC30028F88D /* Info.plist */,
 			);
 			path = ModusProtoUITests;
+			sourceTree = "<group>";
+		};
+		B1E9AD9D21F420BB00ADBCE9 /* variableCells */ = {
+			isa = PBXGroup;
+			children = (
+				B1E9AD9E21F4250B00ADBCE9 /* binaryCell.h */,
+				B1E9AD9F21F4250B00ADBCE9 /* binaryCell.m */,
+				B1E9ADA121F4259500ADBCE9 /* rangeCell.h */,
+				B1E9ADA221F4259500ADBCE9 /* rangeCell.m */,
+				B1E9ADA421F425BE00ADBCE9 /* numberCell.h */,
+				B1E9ADA521F425BE00ADBCE9 /* numberCell.m */,
+				B1E9ADA721F4263A00ADBCE9 /* VariableCell.h */,
+				B1E9ADA821F4263A00ADBCE9 /* VariableCell.m */,
+			);
+			path = variableCells;
+			sourceTree = "<group>";
+		};
+		B1E9ADAE21F42ECF00ADBCE9 /* FirebaseObjects */ = {
+			isa = PBXGroup;
+			children = (
+				B1CFF90821AC4CCD0028F88D /* MoodObject.h */,
+				B1CFF90921AC4CCD0028F88D /* MoodObject.m */,
+				B1E9ADAF21F42EED00ADBCE9 /* VariableObject.h */,
+				B1E9ADB021F42EED00ADBCE9 /* VariableObject.m */,
+			);
+			path = FirebaseObjects;
 			sourceTree = "<group>";
 		};
 		B55A6971AC89FFA774DC0656 /* Pods */ = {
@@ -424,15 +465,20 @@
 			files = (
 				B196D2C821CD3BB400F7FEF4 /* Weather.m in Sources */,
 				B1CFF8DB21AC4BC20028F88D /* ViewController.m in Sources */,
-				B185D2CD21E4FFBA00C1AEA8 /* AddDetailVC.m in Sources */,
+				B1E9ADAC21F42A6200ADBCE9 /* AddDetailTVC.m in Sources */,
 				B1F0039121E0153A006F4162 /* MenuTVC.m in Sources */,
+				B1E9ADA321F4259500ADBCE9 /* rangeCell.m in Sources */,
+				B1E9ADA021F4250B00ADBCE9 /* binaryCell.m in Sources */,
+				B1E9ADA621F425BE00ADBCE9 /* numberCell.m in Sources */,
 				B1CFF8E621AC4BC30028F88D /* main.m in Sources */,
+				B1E9ADB121F42EED00ADBCE9 /* VariableObject.m in Sources */,
 				B1D7297221ADA50B00360D9E /* MoodEntryVC.m in Sources */,
 				B1EF7D1321B9863200CD141F /* EntryCell.m in Sources */,
 				B1D7297521AF543300360D9E /* SettingsVC.m in Sources */,
 				B1CFF8D821AC4BC20028F88D /* AppDelegate.m in Sources */,
 				B1D7296F21AC5B8F00360D9E /* NewTrackerVC.m in Sources */,
 				B1CFF90A21AC4CCD0028F88D /* MoodObject.m in Sources */,
+				B1E9ADA921F4263A00ADBCE9 /* VariableCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -58,7 +58,7 @@
     [self.view addSubview:navBar];
     navBar.translucent = NO;
     
-    [self.dataTypePicker selectRow:2 inComponent:0 animated:YES];
+    [self.dataTypePicker selectRow:0 inComponent:0 animated:YES];
     
     
     
@@ -81,10 +81,11 @@
 }
 
 - (NSInteger)selectedRowInComponent:(NSInteger)component {
-    return 3;
+    return 4;
 }
 
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
+  
     NSString *title = nil;
     switch(row) {
         case 0:
@@ -113,14 +114,14 @@
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
+    
     _selectedRowNum = row;
 }
 
 
 
 - (IBAction)createTracker:(id)sender {
-    
-    
+
     // pull value based of number selection
     NSString *title = nil;
     switch(_selectedRowNum) {
@@ -160,12 +161,8 @@
     self.dbRef = [[FIRDatabase database] reference];
     //        MoodObject *newMoodEntry = [MoodObject alloc] initWithKey: date:dateString moodValue:moodValue addedByUser:@"Nil";
 
-//    FIRDatabaseReference *newTracker = [[[[self.dbRef child:@"jasi2018"] child:@"Trackers"] child:_trackerName.text] setValue: @"thisValue"];
+    // Needs to be broken down to "name": trackerName varType: valueFromPicker
     [[[[self.dbRef child:@"jasi2018"] child:@"Trackers"] child:_trackerName.text] setValue: _valueFromPicker];
-
-    
-    
-    
     
     
     [self dismissViewControllerAnimated:YES completion:nil];
